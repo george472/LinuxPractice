@@ -32,9 +32,9 @@ sudo netplan apply
 ```
 Проверим полученный результат: <br>
 
-![Netplan A](pictures/netA.png)
-![Netplan B](pictures/netB.png)
-![Netplan C](pictures/netC.png)
+![Netplan A](pics/netA.png)
+![Netplan B](pics/netB.png)
+![Netplan C](pics/netC.png)
 
 ---
 **Linux A (server)**
@@ -44,7 +44,7 @@ sudo netplan apply
 В корневой папке создадим файл `app.py` с простым Flask приложением на три эндпоинта. <br>
 Также напишем сервис для автозапуска приложения:
 
-![Flask приложение и сервис для его запуска](pictures/python.png)
+![Flask приложение и сервис для его запуска](pics/python.png)
 
 ---
 **Linux B (gateway)**
@@ -56,7 +56,7 @@ sudo netplan apply
 После изменения сохраняем конфигурацию через `iptables-persistent`. <br>
 Проверим полученный результат: <br>
 
-![ip_rules](pictures/iptables.png)
+![ip_rules](pics/iptables.png)
 
 ---
 
@@ -70,10 +70,10 @@ sudo netplan apply
 - Начать отправлять `curl` запросы на машине **C**
 Проверим полученный результат: <br>
 
-![ВМ С](pictures/python_check.png)
+![ВМ С](pics/python_check.png)
 
 Также проверим логи `tcpdump` на машине **B**:
 
-![get](pictures/tcp_get.png)
-![post](pictures/tcp_post.png)
-![put](pictures/tcp_put.png)
+![get](pics/tcp_get.png)
+![post](pics/tcp_post.png)
+![put](pics/tcp_put.png)
